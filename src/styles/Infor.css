@@ -1,0 +1,119 @@
+#part7{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(45, 168, 206);
+    width: 100%;
+    min-height: 60vh;
+}
+#part7 ul{
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#part7 ul li{
+    list-style: none;
+    padding: 8px 5px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+#part7 a{
+    text-decoration: none;
+    display: block;
+    height: 70px;
+    width: 280px;
+    background-color: #fff;
+    padding-left: 95px;
+    transform: rotate(-30deg) skew(20deg);
+    color: black;
+    box-shadow: -20px 20px 10px rgba(0,0,0.5);
+}
+#part7 ul li span{
+    position: absolute;
+    letter-spacing: 3px;
+    transition: 0.5s;
+    top: 45%;
+    padding-left: 5px;
+}
+#part7 ul li .fab{
+    font-size: 30px;
+    color: black;
+    line-height: 80px;
+    transition: 0.5s;
+
+}
+#part7 a::before{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left:-20px;
+    height: 100%;
+    width: 20px;
+    background-color: #b1b1b1;
+    transition: 0.5s;
+    transform: rotate(0) skewY(-45deg);
+
+}
+#part7 a::after{
+    content: "";
+    position: absolute;
+   bottom: -20px;
+    left:-10px;
+    width: 100%;
+    height: 20px;
+    background-color: #b1b1b1;
+    transition: 0.5s;
+    transform: rotate(0) skewX(-45deg);
+
+}
+#part7 a:hover{
+    transform: rotate(-30deg) skew(20deg) translate(20px,-15px);
+    box-shadow: -50px 50px 50px rgba(0,0,0.5);
+}
+#part7 ul li:hover .fab{
+    color: #fff;
+}
+#part7 ul li a:hover span{
+    color: #fff;
+}
+#part7 ul li:hover:nth-child(1) a{
+    background-color: #3b5988;
+}
+#part7 ul li:hover:nth-child(1) a::before{
+    background-color: #3f62ad;
+}
+#part7 ul li:hover:nth-child(1) a::after{
+    background-color: #2f4a85;
+}
+#part7 ul li:hover:nth-child(2) a{
+    background-color: #e4485f;
+}
+#part7 ul li:hover:nth-child(2) a::before{
+    background-color: #f53d5f;
+}
+#part7 ul li:hover:nth-child(2) a::after{
+    background-color: #c0344e;
+}
+#part7 ul li:hover:nth-child(3) a{
+    background-color: #e4e405;
+}
+#part7 ul li:hover:nth-child(3) a::before{
+    background-color: #b6b604;
+}
+#part7 ul li:hover:nth-child(3) a::after{
+    background-color: #afaf04;
+}
+#part7 ul li:hover:nth-child(4) a{
+    background-color: #00aced;
+}
+#part7 ul li:hover:nth-child(4) a::before{
+    background-color: #097aa5;
+}
+#part7 ul li:hover:nth-child(4) a::after{
+    background-color: #105e7c;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
