@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/trongnguyen.github.io/static/css/main.4efc5dbe.css",
+    "main.js": "/trongnguyen.github.io/static/js/main.43ac9e36.js",
+    "static/media/usa.png": "/trongnguyen.github.io/static/media/usa.55f709b870b6a70f1217.png",
+    "static/media/headphones.png": "/trongnguyen.github.io/static/media/headphones.082a7376def02d754df6.png",
+    "static/media/phone.png": "/trongnguyen.github.io/static/media/phone.ff80559b8448bb5ffda6.png",
+    "static/media/laptop.png": "/trongnguyen.github.io/static/media/laptop.249ef0fb79582d279ef0.png",
+    "index.html": "/trongnguyen.github.io/index.html",
+    "main.4efc5dbe.css.map": "/trongnguyen.github.io/static/css/main.4efc5dbe.css.map",
+    "main.43ac9e36.js.map": "/trongnguyen.github.io/static/js/main.43ac9e36.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4efc5dbe.css",
+    "static/js/main.43ac9e36.js"
+  ]
+}
