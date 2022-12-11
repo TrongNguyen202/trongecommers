@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button, Card } from "react-bootstrap";
-import { useDispatch, useSelector} from 'react-redux';
+import { useDispatch} from 'react-redux';
 import {addToCart} from '../components/cartSlice';
 import { incrementQuantity, decrementQuantity, removeItem} from '../components/cartSlice'
 const Product = ({id, title, image,price, quantity, key}) => {
@@ -8,7 +8,7 @@ const Product = ({id, title, image,price, quantity, key}) => {
   const [virtualQuantity, setVirtualQuantity] = useState(1)
 
   const dispatch = useDispatch()
-  const cart = useSelector((state) => state.cart)
+ 
   const handleAddToCard=()=>{
    setdisPlayQuantity(!disPlayQuantity)
    dispatch(addToCart({

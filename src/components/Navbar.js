@@ -9,9 +9,20 @@ import { TiArrowRepeat } from "react-icons/ti";
 import { BsBookmark } from "react-icons/bs";
 import { FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
+import {useSelector} from 'react-redux';
 const Navbar = () => {
-
+  const cart = useSelector((state) => state.cart)
+  const getTotal = () => {
+ 
+    let totalQuantity = 0
+   
+    cart.forEach(item => {
+      totalQuantity += item.quantity
+      
+    })
+    return   totalQuantity;
+  
+  }
   return (
     <div className="bg-[#131921] p-4 flex  items-center justify-between md:px-8 ">
       {/* Left */}
@@ -67,7 +78,7 @@ const Navbar = () => {
         </Link>
         <div className="absolute text-[16px] h-full -top-3.5 right-10 text-orange-400">
         
-          <p>0 </p>
+          <p>{getTotal()} </p>
        
         </div>
         
