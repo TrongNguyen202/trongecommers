@@ -81,12 +81,13 @@ const Navbar = () => {
           <p>{getTotal()} </p>
        
         </div>
-        
+        <Link to="/Login">
         <div >
         
         <FaUser className="pl-2 cursor-pointer"/>
         
         </div>
+        </Link>
       </div>
     </div>
   );

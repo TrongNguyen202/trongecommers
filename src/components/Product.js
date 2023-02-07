@@ -3,7 +3,7 @@ import { Button, Card } from "react-bootstrap";
 import { useDispatch} from 'react-redux';
 import {addToCart} from '../components/cartSlice';
 import { incrementQuantity, decrementQuantity, removeItem} from '../components/cartSlice'
-const Product = ({id, title, image,price, quantity, key}) => {
+const Product = ({id, title, image,price, quantity}) => {
   const [disPlayQuantity, setdisPlayQuantity] = useState(false)
   const [virtualQuantity, setVirtualQuantity] = useState(1)
 
